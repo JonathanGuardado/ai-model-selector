@@ -95,7 +95,13 @@ decision.fallback_selection_tiers
 
 ## Config
 
-Configuration is defined in `config/`:
+The files in `config/` are examples for developing and demonstrating this
+library. They are not a canonical deployment configuration and downstream
+applications must not load them implicitly. Each application owns and passes
+explicit paths to its operative copies; for example, Ticket Agent owns all
+three files under `agent-system/config/`.
+
+The example set contains:
 
 - `capabilities.yaml`: intent categories and default request signals
 - `models.yaml`: available model tiers and endpoint metadata, including `provider`, `deployment_name`, and optional `invocation`
